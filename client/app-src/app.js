@@ -1,5 +1,17 @@
 import { NegociacaoController } from './controllers/NegociacaoController.js';
 import { Negociacao } from './domain/index.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import 'bootstrap/js/modal.js';
+import '../css/meucss.css';
+
+/*
+// Testando se jQuery está no escopo global
+$('h1').click(() => alert('Click'));
+
+// Testando se o model do bootstrap foi importado
+console.log($('h1').modal)
+*/
 
 const controller = new NegociacaoController();
 const negociacao = new Negociacao(new Date(), 1, 200);
